@@ -1555,3 +1555,67 @@ var openPhotoSwipe21 = function () {
 };
 
 document.getElementById('WaFedSLC').onclick = openPhotoSwipe21;
+
+// WWU VU Multicultural Center
+
+var openPhotoSwipe22 = function () {
+	var pswpElement = document.querySelectorAll('.pswp')[0];
+
+	// build items array
+	var items = [
+		{
+			src: 'LFL-images/WWUVU/01.jpg',
+			w: 794,
+			h: 529,
+		},
+		{
+			src: 'LFL-images/WWUVU/02.jpg',
+			w: 794,
+			h: 529,
+		},
+		{
+			src: 'LFL-images/WWUVU/03.jpg',
+			w: 529,
+			h: 794,
+		},
+		{
+			src: 'LFL-images/WWUVU/04.jpg',
+			w: 794,
+			h: 529,
+		},
+		{
+			src: 'LFL-images/WWUVU/05.jpg',
+			w: 794,
+			h: 529,
+		},
+		{
+			src: 'LFL-images/WWUVU/06.jpg',
+			w: 794,
+			h: 529,
+		},
+		{
+			src: 'LFL-images/WWUVU/06.jpg',
+			w: 794,
+			h: 529,
+		},
+	];
+
+	// define options (if needed)
+	var options = {
+		// history & focus options are disabled on CodePen
+		history: false,
+		focus: false,
+
+		showHideOpacity: true,
+
+		// must also change in CSS file
+		showAnimationDuration: 333,
+		hideAnimationDuration: 333
+
+	};
+
+	var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+	gallery.init();
+};
+
+document.getElementById('WWUVU').onclick = openPhotoSwipe22;
