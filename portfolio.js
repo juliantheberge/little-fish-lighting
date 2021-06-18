@@ -228,64 +228,6 @@ var openPhotoSwipe1 = function () {
 
 document.getElementById('1111').onclick = openPhotoSwipe1;
 
-var openPhotoSwipe2 = function () {
-	var pswpElement = document.querySelectorAll('.pswp')[0];
-
-	// build items array
-	var items = [
-		{
-			src: 'LFL-images/WaFed/001.jpg',
-			w: 2100,
-			h: 1400,
-		},
-		{
-			src: 'LFL-images/WaFed/002.jpg',
-			w: 2100,
-			h: 1400,
-		},
-		{
-			src: 'LFL-images/WaFed/003.jpg',
-			w: 1400,
-			h: 2100,
-		},
-		{
-			src: 'LFL-images/WaFed/004.jpg',
-			w: 2100,
-			h: 1400,
-		},
-		{
-			src: 'LFL-images/WaFed/005.jpg',
-			w: 2100,
-			h: 1400,
-		},
-		{
-			src: 'LFL-images/WaFed/006.jpg',
-			w: 2100,
-			h: 1400,
-		},
-	];
-
-	// define options (if needed)
-	var options = {
-		// history & focus options are disabled on CodePen
-		history: false,
-		focus: false,
-
-		showHideOpacity: true,
-
-		// must also change in CSS file
-		showAnimationDuration: 333,
-		hideAnimationDuration: 333
-
-	};
-
-	var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
-	gallery.init();
-};
-
-document.getElementById('WaFed').onclick = openPhotoSwipe2;
-
-
 var openPhotoSwipe3 = function () {
 	var pswpElement = document.querySelectorAll('.pswp')[0];
 
